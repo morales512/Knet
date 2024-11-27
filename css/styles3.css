@@ -56,7 +56,7 @@ h2 {
 footer {
     background-color: #bac5c9; /* Azul para contraste */
     padding: 15px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -64,7 +64,7 @@ footer {
 }
 
 footer img {
-    max-width: 20px; /* Limita el ancho máximo de la imagen a 100px */
+    max-width: 30px; /* Limita el ancho máximo de la imagen a 100px */
     height: auto; /* Mantiene la proporción original de la imagen */
     display: block; /* Elimina el espacio vacío alrededor de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente dentro del footer */
