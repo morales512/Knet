@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <a href="login.php">Log in</a>
                     <a href="signup.html">Sign up</a>
                     <a href="formulario">Formulario</a>
-                    <a href="proyectos">Nuestros proyectos</a>
+                    <a href="proyectos.html">Nuestros proyectos</a>
                 </div>
             <?php endif; ?>
         </nav>
