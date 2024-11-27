@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"> <!-- Le indicamos que muestre carácteres especiales del español -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Proyectos</title> <!-- Indicamos el título que nos mostrara en el navegador -->
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+	<header>
+        <a href="index.php">
+        <img src="img\logoLetras.png" style="width: 200px; height: auto;">
+    </a>
+            <nav>
+                <?php if (isset($user)): ?>
+                    <p>Hello, <?= htmlspecialchars($user["name"]) ?> | <a class="logout-link" href="logout.php">Log out</a></p>
+                <?php else: ?>
+                    <div class="auth-links">
+                        <a href="login.php">Log in</a>
+                        <a href="signup.html">Sign up</a>
+                        <a href="formulario">Formulario</a>
+                        <a href="proyectos.html">Nuestros proyectos</a>
+                    </div>
+                <?php endif; ?>
+            </nav>
+        </header>
+
+	<main>
+		<ul class="productos"><!-- Creamos una lista no ordenada para poder mostrar los productos a ofrecer -->
+			<li>
+				<h2>Cabello</h2>
+				<img src="imagenes/cabello.jpg">
+				<p class="producto-descripcion">Con tijera o máquina, a gusto del cliente</p>
+				<p class="producto-precio">$ 10.00</p>
+			</li> <!-- Etiqueta de contenido para los items de nuestra lista -->
+			<li>
+				<h2>Barba</h2>
+				<img src="imagenes/barba.jpg">
+				<p class="producto-descripcion">Corte y diseño profesional de barba</p>
+				<p class="producto-precio">$ 8.00</p>
+			</li>
+			<li>
+				<h2>Cabello + Barba</h2>
+				<img src="imagenes/cabello+barba.jpg">
+				<p class="producto-descripcion">Paquete completo de cabello y barba</p>
+				<p class="producto-precio">$ 15.00</p>
+			</li>
+		</ul>
+	</main> <!-- Etiqueta específica para el cuerpo de la página -->
+
+	<footer> <!-- Etiqueta <footer></footer> para indicar que es el píe de página -->
+		<img src="">
+		<p class="copyright"> &copy; Copyright Construye-T Knet-2024 </p>
+	</footer>
+
+</body>
+</html>
+
+<!-- Para crear enlaces a otras paginas usamos la etiqueta Anchor <a href="">nombre</a> -->
+<!-- Para meter el simbolo del copyright se puede hacer de la siguiente manera:
+			Código HTML	&#169;
+			Código CSS	\00A9
+			Entidad	&copy;
+ sin embargo, se suele utilizar más la de entidad-->
+
+ <!-- <link rel="stylesheet" type="text/css" href="reset.css"> <!-- Lo colocamos acá pues queremos que nos eliminé le formato antes de nosotros dar el nuestro --> 
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> <!-- Estamos ligando nuestro archivo Css con el html -->
+  
