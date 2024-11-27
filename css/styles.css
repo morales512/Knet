@@ -63,6 +63,15 @@ footer {
     color: white;
 }
 
+footer img {
+    max-width: 20px; /* Limita el ancho máximo de la imagen a 100px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina el espacio vacío alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del footer */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+
 /* Enlaces */
 .logout-link, .auth-links a {
     color: white;
@@ -116,8 +125,8 @@ footer {
 	font-weight: bold; /*para definir que el estilo va en negrita*/
 }
 
-.productos li:hover h2{  /*Cuanod se posicione en cualquier lugar del productos li, pasa a afectar al h2*/
-	font-size: 33px;
+.productos li:hover h2{  /*Cuando se posicione en cualquier lugar del productos li, pasa a afectar al h2*/
+	font-size: 32px;
 }
 
 .producto-descripcion{
