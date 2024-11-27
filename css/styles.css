@@ -93,6 +93,16 @@ footer {
 	border-radius: 10px; /*Instrucción para redondear bordes. Indicamos que todos los bordes en cada esquina tienen un radio de 10px*/
 }
 
+.productos li img { /*Selector que nos ajusta la imagen a colocar al ancho de nuestro contenedor*/
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Ajustará la altura automáticamente para mantener la proporción */
+    display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
+}
+
+
+
 .productos li:hover{
 	border-color: #ffffff; /*color mostaza a los bordes cuando pase el mouse*/
 }
