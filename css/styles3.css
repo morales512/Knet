@@ -123,16 +123,16 @@ footer img {
 }
 
 .productos h2{
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: bold; /*para definir que el estilo va en negrita*/
 }
 
 .productos li:hover h2{  /*Cuando se posicione en cualquier lugar del productos li, pasa a afectar al h2*/
-	font-size: 32px;
+	font-size: 26px;
 }
 
 .producto-descripcion{
-	font-size: 18px;/*Le cambiamos el tamaño de la letra*/
+	font-size: 14px;/*Le cambiamos el tamaño de la letra*/
 }
 
 .producto-precio{
