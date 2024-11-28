@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<meta charset="utf-8"> <!-- Le indicamos que muestre carácteres especiales del español -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Proyectos</title> <!-- Indicamos el título que nos mostrara en el navegador -->
-    <link rel="stylesheet" href="css/styles3.css"> 
+	<link rel="stylesheet" href="css/styles3.css">
 </head>
+
 <body>
 	<header>
-        <a href="index.php">
-        <img src="img\construye.jpg" style="width: 100px; height: auto;">
-    </a>
-            <nav>
-                <?php if (isset($user)): ?>
-                    <p>Hello, <?= htmlspecialchars($user["name"]) ?> | <a class="logout-link" href="logout.php">Log out</a></p>
-                <?php else: ?>
-                    <div class="auth-links">
-                        <a href="login.php">Log in</a>
-                        <a href="signup.html">Sign up</a>
-                        <a href="formulario">Formulario</a>
-                        <a href="proyectos.html">Nuestros proyectos</a>
-                    </div>
-                <?php endif; ?>
-            </nav>
-        </header>
+		<a href="index.php">
+			<img src="img\construye.jpg" style="width: 100px; height: auto;">
+		</a>
+		<nav>
+			<?php if (isset($user)): ?>
+			<p>Hello,
+				<?= htmlspecialchars($user["name"]) ?> | <a class="logout-link" href="logout.php">Log out</a>
+			</p>
+			<?php else: ?>
+			<div class="auth-links">
+				<a href="login.php">Log in</a>
+				<a href="signup.html">Sign up</a>
+				<a href="formulario">Formulario</a>
+				<a href="proyectos.html">Nuestros proyectos</a>
+			</div>
+			<?php endif; ?>
+		</nav>
+	</header>
 
 	<main>
+
+		<section class="destacado">
+			<div class="proyecto-destacado">
+				<img src="img/construye.jpg" alt="Imagen destacada">
+				<div class="descripcion">
+					<h2>Construye-T</h2>
+					<p>
+						Construye-T es una iniciativa de KNET que busca mejorar la infraestructura de comunidades, abordando problemáticas alineadas al Objetivo de Desarrollo Sostenible 9 (ODS 9). Actúa como un puente entre ciudadanos, estudiantes, instituciones y gobiernos, fomentando la colaboración para identificar y resolver desafíos de infraestructura con soluciones innovadoras y sostenibles.
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<ul class="productos"><!-- Creamos una lista no ordenada para poder mostrar los productos a ofrecer -->
 			<li>
 				<h2>Proyecto Próximo</h2>
 				<img src="img/imagen.png">
 				<p class="producto-descripcion"></p>
-                <a href="pagina-404.html">Ver más</a>
+				<a href="pagina-404.html">Ver más</a>
 			</li> <!-- Etiqueta de contenido para los items de nuestra lista -->
 			<li>
 				<h2>Ampliación del Blvd. Hermanos Serdán</h2>
 				<img src="img/blvd.png">
-				<p class="producto-descripcion">Lograr que el Blvd. Hermanos Serdán sea una vialidad de transito continuo y las vialidades secundarias que conectan con el sean buenas alternativas para salir y conectar.</p>
+				<p class="producto-descripcion">Lograr que el Blvd. Hermanos Serdán sea una vialidad de transito
+					continuo y las vialidades secundarias que conectan con el sean buenas alternativas para salir y
+					conectar.</p>
 				<a href="Ampliacion-Blvd.html"> Ver más</a>
 			</li>
 			<li>
 				<h2>Proyecto Próximo</h2>
 				<img src="img/imagen.png">
 				<p class="producto-descripcion"></p>
-                <a href="pagina-404.html">Ver más</a>
+				<a href="pagina-404.html">Ver más</a>
 			</li>
 		</ul>
 	</main> <!-- Etiqueta específica para el cuerpo de la página -->
@@ -55,6 +74,7 @@
 	</footer>
 
 </body>
+
 </html>
 
 <!-- Para crear enlaces a otras paginas usamos la etiqueta Anchor <a href="">nombre</a> -->
