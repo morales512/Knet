@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Knet</title>
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,26 +29,26 @@
     <div class="news-cards">
             <div>
                 <img src="img/vision.jpg" alt="News 1">
-                <h3>Innovación Educativa.</h3>
-                <p>Explora las últimas innovaciones educativas en TutorTree. Desde recursos interactivos hasta sesiones de tutoría en línea, estamos transformando la forma de aprender.</p>
-                <a href="#">Leer más</a> <i class="fas fa-angle-double-right"></i>
+                <h3>Visión</h3>
+                <p>"Convertirnos en el referente estatal y universitario en la creación e implementación de proyectos que impulsen el desarrollo industrial, la innovación tecnológica y la mejora de la infraestructura social. Aspiramos a ser líderes en la construcción de un futuro sostenible, promoviendo una comunidad más inclusiva, conectada y orientada al bienestar común."</p>
             </div>
             <div>
-                <img src="img/spect.jpeg" alt="News 1">
-                <h3>Conoce a Nuestros Tutores</h3>
-                <p>Descubre las historias inspiradoras de nuestros tutores destacados. Expertos dedicados que guían a los estudiantes hacia el éxito académico. ¡Conócelos ahora!</p>
-                <a href="Productos.html">Conocer a los tutores</a> <i class="fas fa-angle-double-right"></i>
+                <img src="img/mision.png" alt="News 1">
+                <h3>Misión</h3>
+                <p>"Impulsar la colaboración entre la comunidad estatal y universitaria para desarrollar proyectos que fortalezcan la infraestructura, promuevan la innovación y generen soluciones sostenibles a los desafíos sociales, alineados con los principios del Objetivo de Desarrollo Sostenible 9. Trabajamos para integrar el conocimiento académico y las necesidades locales en iniciativas que transformen positivamente nuestro entorno."</p>
             </div>
             <div>
-                <img src="img/spect2.jpeg" alt="News 1">
-                <h3>Crecimiento Educativo: Raíces de Éxito</h3>
-                <p>Explora cómo un estudiante en TutorTree expande sus horizontes, explorando nuevas ramas del conocimiento. Descubre cómo nuestras tutorías cultivan la curiosidad y el aprendizaje continuo.</p>
-                <a href="#">Leer más</a> <i class="fas fa-angle-double-right"></i>
+                <img src="img/proyectos.png" alt="News 1">
+                <h3>Proyectos</h3>
+                <p>KNET se especializa en el diseño, desarrollo y ejecución de proyectos orientados a resolver problemáticas sociales, con un enfoque particular en infraestructura, innovación y sostenibilidad, alineados al Objetivo de Desarrollo Sostenible 9. Los proyectos que desarrolla esta empresa abarcan diversas áreas estratégicas, integrando a la comunidad estatal y universitaria para maximizar el impacto positivo en el entorno..</p>
+                <a href="proyectos.html">Conoce "Construye-T"</a> <i class="fas fa-angle-double-right"></i>
             </div>
             <div>
-                <img src="img/spect3.jpeg" alt="News 1">
-                <h3>Colaboración Estudiantil</h3>
-                <p>¡Uniendo mentes brillantes! Lee cómo la colaboración estudiantil en TutorTree está creando comunidades de aprendizaje efectivas y amigables.</p>
+                <img src="img/problemas.png" alt="News 1">
+                <h3>¿Tienes una problematica?</h3>
+                <p>KNET ofrece a la comunidad estatal y universitaria un espacio para identificar, analizar y proponer soluciones a problemáticas de infraestructura en sus ciudades, localidades o colonias. Esta iniciativa busca empoderar a las personas permitiéndoles participar activamente en la mejora de su entorno mediante una herramienta de solicitud y colaboración.
+
+A través de esta plataforma, cualquier ciudadano, grupo comunitario o institución puede realizar una petición detallando las dificultades de infraestructura que enfrentan.</p>
                 <a href="#">Leer más</a> <i class="fas fa-angle-double-right"></i>
             </div>
         </div>
@@ -69,8 +69,9 @@
         </div>
     </div>
 
-    <footer>
-        ¡Síguenos en nuestras redes sociales!
-    </footer>
+	<footer> <!-- Etiqueta <footer></footer> para indicar que es el píe de página -->
+		<img src="img/simplified.png">
+		<p class="copyright"> &copy; Copyright Construye-T Knet-2024 </p>
+	</footer>
 </body>
 </html>
