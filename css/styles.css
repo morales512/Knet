@@ -1,4 +1,4 @@
-/* Estilo general */
+/* Ajuste general para márgenes laterales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,8 +6,10 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     background-color: #FFA500; /* Color naranja */
     color: white;
+    padding: 0 20px; /* Agrega margen interno lateral */
 }
 
+/* Encabezado */
 /* Encabezado */
 header {
     background-color: #00C1FF; /* Azul para contraste */
@@ -37,26 +39,32 @@ nav a {
 .container {
     text-align: center;
     padding: 40px 20px;
+    margin: 0 auto; /* Centrado */
+    max-width: 1200px; /* Para limitar el ancho máximo */
 }
 
-.section {
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #FF7043; /* Un tono más oscuro de naranja */
-    border-radius: 10px;
-    max-width: 800px;
-    color: white;
+/* News Cards */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px auto; /* Márgenes superiores e inferiores */
+    max-width: 1200px; /* Limitar el ancho total */
+    padding: 0 20px; /* Márgenes laterales */
 }
 
-h2 {
-    margin-top: 0;
+/* Ajustar las imágenes */
+.news-cards img {
+    width: 100%;
+    height: auto; /* Ajustar altura proporcional */
+    border-radius: 5px; /* Opcional: bordes redondeados */
 }
 
 /* Footer */
 footer {
     background-color: #00C1FF; /* Azul para contraste */
     padding: 15px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -69,6 +77,8 @@ footer img {
     display: block; /* Elimina el espacio vacío alrededor de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente dentro del footer */
     border-radius: 5px; /* Opcional: bordes redondeados */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    
 }
 
 
@@ -83,143 +93,11 @@ footer img {
 }
 
 
-/* NEWS CARDS*/
-.news-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 10px 0;
-}
-
-.news-cards img {
-    width: 100%;
-    height: 180px;
-}
-
-.news-cards h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: black;
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.news-cards a:hover{
-    text-decoration: underline;
-}
-
-/*CARDS BANNER ONE*/
-.cards-banner-one{
-    width: 100%;
-    height: 350px;
-    background: url('./img/banner.jpeg');
-    margin-bottom: 40px;
-}
-
-.cards-banner-one .content {
-    width: 40%;
-    padding: 90px 0 0 30px;
-    color: black;
-}
-
-/*Social*/
-.social {
-    margin: 50px;
-}
-
-.social p {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.links a {
-    margin: 0 30px;
-}
-
-.links a i {
-    font-size: 3rem;
-}
-
-/*FOOTER LINKS*/
-.footer-links {
-    background-color: wheat;
-    color: black;
-    font-size: 12px;
-    padding: 35px 0;
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.footer-container ul {
-    margin: 0 auto;
-}
-
-.footer-container ul li {
-line-height: 2;
-}
-
-.footer {
-    background: wheat;
-    color: gray;
-    font-size: 12px;
-    padding: 20px 0;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-@media (max-width: 700px){
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-main ul.nav-menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #7ee394;
-        height: 100%;
-        padding: 30px;
-        opacity: .9;
-        transform: translateX(-400px);
-        transition: transform .5s ease-in-out;
-    }
-
-    .nav-main ul.nav-menu.show {
-        transform: translateX(-20px);
-    }
-
-    .nav-main ul.nav-menu li{
-        padding: 20px;
-        border-bottom: white solid 1px;
-        font-size: 14px;
-    }
-
-    .nav-main ul.nav-menu-right {
-        margin-right: 20px;
-    }
-    
-    .news-cards{
+@media (max-width: 700px) {
+    /* Ajuste de responsive */
+    .news-cards {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cards-banner-one .content {
-        width: 80%;
+        padding: 0 10px; /* Márgenes laterales más pequeños en pantallas pequeñas */
     }
 
     .footer-links .footer-container {
