@@ -53,20 +53,24 @@ A través de esta plataforma, cualquier ciudadano, grupo comunitario o instituci
             </div>
         </div>
 
-    <div class="container">
-        <div class="section">
-            <h2>Nuestra Visión</h2>
-            <p>
-                Conectar ideas y construir un planeta sostenible para todos. Nuestro objetivo es fomentar la innovación y apoyar proyectos que marquen una diferencia positiva en la sociedad.
-            </p>
-        </div>
+        <div class="container">
+    <div class="section">
+        <h2>Nuestra objetivo de desarrollo sustentable</h2>
+        <img src="img/ods9.jpg" alt="Nuestra Visión" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+        <p>
+    El estado de Puebla es un nodo estratégico en infraestructura y desarrollo urbano en México, lo que lo convierte en un contexto ideal para abordar el <a href="https://www.un.org/sustainabledevelopment/es/infrastructure/" target="_blank">Objetivo de Desarrollo Sostenible (ODS) 9</a>. Este objetivo busca construir infraestructura sostenible, promover la innovación y fortalecer la industrialización inclusiva. La investigación identifica que, además de disciplinas tradicionales como la arquitectura e ingeniería civil, áreas emergentes como la Gestión de Ciudades Inteligentes y las Transiciones Tecnológicas son clave para enfrentar desafíos urbanos como el tráfico vehicular, la falta de conectividad eficiente y la necesidad de espacios sostenibles.
+        </p>
+    </div>
 
-        <div class="section">
-            <h2>Nuestra Misión</h2>
-            <p>
-                Empoderar a las comunidades mediante herramientas tecnológicas, impulsando la colaboración para crear soluciones innovadoras y sostenibles en infraestructura e industria.
-            </p>
-        </div>
+    <div class="section">
+        <h2>Nuestra Misión</h2>
+        <img src="ruta_de_la_imagen_mision.jpg" alt="Nuestra Misión" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+        <p>
+            Empoderar a las comunidades mediante herramientas tecnológicas, impulsando la colaboración para crear soluciones innovadoras y sostenibles en infraestructura e industria.
+        </p>
+    </div>
+</div>
+
     </div>
 
 	<footer> <!-- Etiqueta <footer></footer> para indicar que es el píe de página -->
