@@ -63,12 +63,59 @@ A través de esta plataforma, cualquier ciudadano, grupo comunitario o instituci
     </div>
 
     <div class="section">
-        <h2>Nuestra Misión</h2>
-        <img src="ruta_de_la_imagen_mision.jpg" alt="Nuestra Misión" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
-        <p>
-            Empoderar a las comunidades mediante herramientas tecnológicas, impulsando la colaboración para crear soluciones innovadoras y sostenibles en infraestructura e industria.
-        </p>
+        <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+        <div id="overflow">
+            <div class="inner">
+                <div class="slide slide_1">
+                <div class="slide-content">
+                    <h2>Slide 1</h2>
+                    <img src="img/s1.jpg" alt="Description for Slide 1">
+                    <p>Content for Slide 1</p>
+                </div>
+                </div>
+                <div class="slide slide_2">
+                <div class="slide-content">
+                    <h2>Slide 2</h2>
+                    <img src="img/s2.jpg" alt="Description for Slide 2">
+                    <p>Content for Slide 2</p>
+                </div>
+                </div>
+                <div class="slide slide_3">
+                <div class="slide-content">
+                    <h2>Slide 3</h2>
+                    <img src="image3.jpg" alt="Description for Slide 3">
+                    <p>Content for Slide 3</p>
+                </div>
+                </div>
+                <div class="slide slide_4">
+                <div class="slide-content">
+                    <h2>Slide 4</h2>
+                    <img src="image4.jpg" alt="Description for Slide 4">
+                    <p>Content for Slide 4</p>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+    </div>
+    </div>
+
 </div>
 
     </div>
