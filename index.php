@@ -88,14 +88,14 @@ A través de esta plataforma, cualquier ciudadano, grupo comunitario o instituci
                 <div class="slide slide_3">
                 <div class="slide-content">
                     <h2>Slide 3</h2>
-                    <img src="image3.jpg" alt="Description for Slide 3">
+                    <img src="img/s3.jpg" alt="Description for Slide 3">
                     <p>Content for Slide 3</p>
                 </div>
                 </div>
                 <div class="slide slide_4">
                 <div class="slide-content">
                     <h2>Slide 4</h2>
-                    <img src="image4.jpg" alt="Description for Slide 4">
+                    <img src="img/s4.jpg" alt="Description for Slide 4">
                     <p>Content for Slide 4</p>
                 </div>
                 </div>
