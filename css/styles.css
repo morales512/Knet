@@ -1,0 +1,250 @@
+/* Ajuste general para márgenes laterales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #FFA500; /* Color naranja */
+    color: white;
+    padding: 0 20px; /* Agrega margen interno lateral */
+}
+
+/* Encabezado */
+/* Encabezado */
+header {
+    background-color: #00C1FF; /* Azul para contraste */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+/* Enlaces generales */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del texto circundante */
+}
+
+/* Estilo específico para enlaces en la navegación */
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilo específico para enlaces especiales */
+.logout-link, .auth-links a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto; /* Centrado */
+    max-width: 1200px; /* Para limitar el ancho máximo */
+}
+
+/* News Cards */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px auto; /* Márgenes superiores e inferiores */
+    max-width: 1200px; /* Limitar el ancho total */
+    padding: 0 20px; /* Márgenes laterales */
+}
+
+/* Ajustar las imágenes */
+.news-cards img {
+    width: 100%;
+    height: auto; /* Ajustar altura proporcional */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    }
+    #slider input[type=radio] {
+    display: none;
+    }
+    #slider label {
+    cursor:pointer;
+    text-decoration: none;
+    }
+    #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    }
+    #overflow {
+    width: 100%;
+    overflow: hidden;
+    }
+    #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+    }
+    #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+    }
+    #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+    }
+    #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+    }
+    
+    #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+    }
+    #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    }
+    #slides .slide_1 {
+    background: #00171F;
+    }
+    #slides .slide_2 {
+    background: #003459;
+    }
+    #slides .slide_3 {
+    background: #007EA7;
+    }
+    #slides .slide_4 {
+    background: #00A8E8;
+    }
+    #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+    }
+    #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+    }
+    #controls label:hover {
+    opacity: 1;
+    }
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+    }
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+    }
+    #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+    }
+    #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+    }
+    #slide1:checked ~ #bullets label:nth-child(1),
+    #slide2:checked ~ #bullets label:nth-child(2),
+    #slide3:checked ~ #bullets label:nth-child(3),
+    #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+    }
+    @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+        margin: 0;
+    }
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+    }
+
+    #slider .slide-content img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+
+/* Footer */
+footer {
+    background-color: #00C1FF; /* Azul para contraste */
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    max-width: 20px; /* Limita el ancho máximo de la imagen a 100px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina el espacio vacío alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del footer */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    /* Ajuste de responsive */
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px; /* Márgenes laterales más pequeños en pantallas pequeñas */
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

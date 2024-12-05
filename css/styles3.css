@@ -1,0 +1,187 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #00C1FF; /* Color celeste */
+    color: white;
+}
+
+/* Encabezado */
+header {
+    background-color: #bac5c9; /* gris para contraste */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FF7043; /* Un tono más oscuro de naranja */
+    border-radius: 10px;
+    max-width: 800px;
+    color: white;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #bac5c9; /* Azul para contraste */
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    max-width: 30px; /* Limita el ancho máximo de la imagen a 100px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina el espacio vacío alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del footer */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    
+}
+
+
+/* Enlaces */
+.logout-link, .auth-links a {
+    color: white;
+    font-weight: bold;
+}
+
+.auth-links a {
+    margin: 0 10px;
+}
+
+.productos{ /*Creamos un selector para poder decirle que queremos que esté centrado y que ocupe cierto ancho*/
+	width: 940px; /*Le ponemos*/
+	position: relative; /*posición relativa a la posicón absoluta que habíamos puesto anteriormente*/
+	margin: 0 auto; /*Margen de 0 en parte superior e inferior, y aútomatico en los bordes*/
+	padding: 50px; /*Porpiedad para espaciamiento externo, colocamso 20px de parte superior e inferior*/
+}
+
+.productos li{
+	display: inline-block; /*Le indicamos que ocupe lo necesario y se nos permita alterar el interior*/
+	text-align: center; /*Alineamos todos los textos al centro*/
+	width: 30%; /*Le indicamos que cada elemento ocupe el 30% del espacio*/
+	vertical-align: top ;/*Indicamos que la alineación sea en la vertical*/
+	margin: 0 1.5%; /*margen de 0 en superior e inferior, pero de 1.5% en los laterales entre los objetos*/
+	padding: 30px 20px; /*Espaciamiento interno entre el título y las ímágenes, 30px en vertical y 20px en horizontal*/
+	/*Pero, sí hacemos lo anterior van a salir del tamaño asignado a la página, por lo que vamos a usar una propiedad*/
+	box-sizing: border-box; /*Tamaño de la caja, border-box hace referencia a que el límite del espacio que va a ser definido va a ser el borde de los objetos*/
+	border: 2px solid #000000; 
+	border-radius: 10px; /*Instrucción para redondear bordes. Indicamos que todos los bordes en cada esquina tienen un radio de 10px*/
+}
+
+.productos li img { /*Selector que nos ajusta la imagen a colocar al ancho de nuestro contenedor*/
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Ajustará la altura automáticamente para mantener la proporción */
+    display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
+}
+
+
+
+.productos li:hover{
+	border-color: #ffffff; /*color mostaza a los bordes cuando pase el mouse*/
+}
+
+.productos li:active{ 
+	border-color: #088C19;/*Color verde cuando se da click*/
+}
+
+.productos h2{
+	font-size: 22px;
+	font-weight: bold; /*para definir que el estilo va en negrita*/
+}
+
+.productos li:hover h2{  /*Cuando se posicione en cualquier lugar del productos li, pasa a afectar al h2*/
+	font-size: 26px;
+}
+
+.producto-descripcion{
+	font-size: 14px;/*Le cambiamos el tamaño de la letra*/
+}
+
+.producto-precio{
+	font-size: 20px; /*indicamos el tamaño de letra nuevo*/
+	font-weight: bold; /*indicamos el tipo de fuente, en este caso negrita*/
+	margin-top: 10px;/*Separamos el precio de la descripción con 10 pixeles*/
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px; /*Margen externo de 20px*/
+}
+
+/* Contenedor del proyecto destacado */
+.proyecto-destacado {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233b3b3b' fill-opacity='0.23' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #00C1FF; /* Fondo similar al ejemplo */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px; /* Ajusta el ancho máximo */
+}
+
+/* Imagen circular */
+.proyecto-destacado img {
+    width: 150px; /* Tamaño del círculo */
+    height: 150px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border: 3px solid white; /* Borde blanco */
+}
+
+/* Estilo para la descripción */
+.proyecto-destacado .descripcion {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.proyecto-destacado h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.proyecto-destacado p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
