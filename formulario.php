@@ -52,8 +52,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Problemáticas</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<header>
+<a href="index.php">
+    <img src="img\logoLetras.png" style="width: 200px; height: auto;">
+</a>
+        <nav>
+            <?php if (isset($user)): ?>
+                <p>Hello, <?= htmlspecialchars($user["name"]) ?> | <a class="logout-link" href="logout.php">Log out</a></p>
+            <?php else: ?>
+                <div class="auth-links">
+                    <a href="login.php">Log in</a>
+                    <a href="signup.html">Sign up</a>
+                    <a href="formulario">Formulario</a>
+                    <a href="proyectos.html">Nuestros proyectos</a>
+                </div>
+            <?php endif; ?>
+        </nav>
+    </header>
 <body>
     <div class="container">
         <h1>Registro de Problemáticas en Puebla</h1>
@@ -139,4 +157,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         });
     </script>
 </body>
+
+<footer> <!-- Etiqueta <footer></footer> para indicar que es el píe de página -->
+		<img src="img/simplified.png">
+		<p class="copyright"> &copy; Copyright Construye-T Knet-2024 </p>
+	</footer>
 </html>
