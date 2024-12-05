@@ -1,0 +1,20 @@
+{
+    "Puebla (Capital)": ["Centro Histórico", "La Paz", "San Manuel", "Amalucan", "San Baltazar Campeche", "Bosques de San Sebastián", "Reforma Agua Azul", "Jardines de San Manuel"],
+    "Atlixco": ["Cabrera", "La Trinidad Tepango", "Metepec", "Axocopan", "Colonia Álvaro Obregón", "San Diego Acapulco"],
+    "San Pedro Cholula": ["Centro", "San Juan Tlautla", "San Cristóbal Tepontla", "Santiago Momoxpan", "Barrio de Jesús Tlatempa"],
+    "San Andrés Cholula": ["Concepción La Cruz", "Tlaxcalancingo", "Lomas de Angelópolis", "San Antonio Cacalotepec"],
+    "Tehuacán": ["San Nicolás Tetitzintla", "Santa María Coapan", "Santiago Tula", "La Purísima", "San Lorenzo Teotipilco"],
+    "Amozoc": ["Casa Blanca", "San Salvador Chachapa", "Las Ánimas", "San Mateo Mendizábal"],
+    "Huauchinango": ["Santa Dora", "Colonia 5 de Mayo", "La Mesita", "Cuautitla", "La Libertad"],
+    "Zacatlán": ["Tepetlaoxtoc", "Jilotzingo", "San Pedro Atmatla", "Colonia El Nogal"],
+    "Izúcar de Matamoros": ["San Nicolás Tolentino", "Colonia La Galarza", "San Juan Raboso", "Colonia 3 de Mayo"],
+    "Chignahuapan": ["Barrio de la Magdalena", "Barrio de Ixtlahuaca", "Barrio de San Juan", "Centro"],
+    "Xicotepec": ["San Isidro", "El Tabacal", "Colonia 2 de Marzo", "Tlapehuala"],
+    "San Martín Texmelucan": ["San Lucas Atoyatenco", "Santa María Moyotzingo", "San Baltazar Temaxcalac", "El Moral"],
+    "Cuautlancingo": ["Sanctorum", "Reserva Territorial Quetzalcóatl", "Misiones de San Francisco", "Villas de San Juan"],
+    "Chalchicomula de Sesma (Ciudad Serdán)": ["Colonia San Isidro", "San Juan Atenco", "Rancho Alegre", "San Francisco Cuautlancingo"],
+    "Acatlán de Osorio": ["San Vicente Boquerón", "San Cristóbal Tulcingo", "Colonia Emiliano Zapata", "Colonia Morelos"],
+    "Coronango": ["San Antonio Mihuacán", "Misiones de San Francisco", "Colonia Las Flores"],
+    "Tlatlauquitepec": ["Xonocuautla", "Ocotlán", "Centro", "Atalpa"],
+    "Tepeaca": ["Santa María Oxtotipan", "San Hipólito Xochiltenango", "Santiago Acatlán"]
+}

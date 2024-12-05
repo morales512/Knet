@@ -19,7 +19,7 @@
                 <div class="auth-links">
                     <a href="login.php">Log in</a>
                     <a href="signup.html">Sign up</a>
-                    <a href="formulario">Formulario</a>
+                    <a href="formulario.php">Formulario</a>
                     <a href="proyectos.html">Nuestros proyectos</a>
                 </div>
             <?php endif; ?>
@@ -49,7 +49,7 @@
                 <p>KNET ofrece a la comunidad estatal y universitaria un espacio para identificar, analizar y proponer soluciones a problemáticas de infraestructura en sus ciudades, localidades o colonias. Esta iniciativa busca empoderar a las personas permitiéndoles participar activamente en la mejora de su entorno mediante una herramienta de solicitud y colaboración.
 
 A través de esta plataforma, cualquier ciudadano, grupo comunitario o institución puede realizar una petición detallando las dificultades de infraestructura que enfrentan.</p>
-                <a href="#">Leer más</a> <i class="fas fa-angle-double-right"></i>
+                <a href="formulario.html">Leer más</a> <i class="fas fa-angle-double-right"></i>
             </div>
         </div>
 
